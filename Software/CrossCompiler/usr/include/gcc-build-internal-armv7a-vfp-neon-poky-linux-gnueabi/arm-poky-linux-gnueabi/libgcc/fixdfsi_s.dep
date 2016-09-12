@@ -1,0 +1,4 @@
+fixdfsi_s.o: fixdfsi.c \
+ /home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/zedboard-zynq7/usr/include/stdc-predef.h
+
+/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/zedboard-zynq7/usr/include/stdc-predef.h:

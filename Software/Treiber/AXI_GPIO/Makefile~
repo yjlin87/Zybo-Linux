@@ -1,0 +1,15 @@
+# Zu erzeugende Datei
+obj-m += AXI_GPIO.o
+
+# Aktuelles Verzeichnis
+PWD  := $(shell pwd)
+
+ARCH := arm
+CROSS_COMPILE := $(shell pwd)/../Compiler/usr/bin/armv7a-vfp-neon-poky-linux-gnueabi/arm-poky-linux-gnueabi-
+KDIR := ../../linux-xlnx
+
+all:
+	make ARCH=$(ARCH) CROSS_COMPILE=$(CROSS_COMPILE) -C $(KDIR) SUBDIRS=$(PWD) modules
+
+clean:
+	make ARCH=$(ARCH) -C $(KDIR) SUBDIRS=$(PWD) clean

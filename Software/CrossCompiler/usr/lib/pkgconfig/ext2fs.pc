@@ -1,0 +1,11 @@
+prefix=/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/usr
+exec_prefix=/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/usr
+libdir=/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/lib
+includedir=/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/usr/include
+
+Name: ext2fs
+Description: Ext2fs library
+Version: 1.42.9
+Requires.private: com_err
+Cflags: -I${includedir}/ext2fs -I${includedir}
+Libs: -L${libdir} -lext2fs

@@ -1,0 +1,6 @@
+22:12:24 **** Incremental Build of configuration Debug for project FFT_bsp_xllfifo_interrupt_example_1 ****
+make all 
+make: Für das Ziel »all« ist nichts zu tun.
+
+22:12:24 Build Finished (took 146ms)
+

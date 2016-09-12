@@ -1,0 +1,12 @@
+prefix=/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/usr
+exec_prefix=/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/usr
+libdir=/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/usr/lib
+includedir=/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/usr/include
+
+
+Name: libexslt
+Version: 0.8.17
+Description: EXSLT Extension library
+Requires: libxml-2.0
+Libs: -lexslt -L${libdir} -lexslt -lxslt  -L/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/usr/lib -lxml2 -lz -lm -ldl -lm 
+Cflags: -I${includedir}

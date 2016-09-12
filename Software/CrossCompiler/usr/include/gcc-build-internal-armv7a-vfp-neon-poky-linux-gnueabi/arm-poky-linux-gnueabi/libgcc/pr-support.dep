@@ -1,0 +1,11 @@
+pr-support.o: \
+ /home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/work-shared/gcc-4.8.2-r0/gcc-4.8.2/libgcc/config/arm/pr-support.c \
+ /home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/zedboard-zynq7/usr/include/stdc-predef.h \
+ unwind.h \
+ /home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/work/armv7a-vfp-neon-poky-linux-gnueabi/gcc-cross/4.8.2-r0/gcc-4.8.2/build.x86_64-linux.arm-poky-linux-gnueabi/gcc/include/unwind-arm-common.h
+
+/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/zedboard-zynq7/usr/include/stdc-predef.h:
+
+unwind.h:
+
+/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/work/armv7a-vfp-neon-poky-linux-gnueabi/gcc-cross/4.8.2-r0/gcc-4.8.2/build.x86_64-linux.arm-poky-linux-gnueabi/gcc/include/unwind-arm-common.h:

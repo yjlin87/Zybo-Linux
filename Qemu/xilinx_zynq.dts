@@ -1,0 +1,197 @@
+/dts-v1/;
+
+/ {
+	model = "Xilinx Zynq EP107";
+	compatible = "xlnx,zynq-ep107";
+	#address-cells = <0x1>;
+	#size-cells = <0x1>;
+	interrupt-parent = <0x1>;
+
+	memory {
+		device_type = "memory";
+		reg = <0x0 0x10000000>;
+	};
+
+	chosen {
+		bootargs = "console=ttyPS0,115200 root=/dev/ram rw initrd=0x800000,8M earlyprintk ip=:::::eth0:dhcp";
+		linux,stdout-path = "/amba@0/uart@E0001000";
+	};
+
+	amba@0 {
+		compatible = "simple-bus";
+		#address-cells = <0x1>;
+		#size-cells = <0x1>;
+		ranges;
+
+		intc@f8f01000 {
+			interrupt-controller;
+			compatible = "arm,gic";
+			reg = <0xf8f01000 0x1000>;
+			#interrupt-cells = <0x2>;
+			linux,phandle = <0x1>;
+			phandle = <0x1>;
+		};
+
+		uart@e0001000 {
+			compatible = "xlnx,ps7-uart-1.00.a";
+			reg = <0xe0001000 0x1000>;
+			interrupts = <0x52 0x0>;
+			clock = <0x2faf080>;
+		};
+
+		uart@e0000000 {
+			compatible = "xlnx,ps7-uart-1.00.a";
+			reg = <0xe0000000 0x1000>;
+			interrupts = <0x3b 0x0>;
+			clock = <0x2faf080>;
+		};
+
+		gpio@e000a000 {
+			compatible = "xlnx,ps7-gpio-1.00.a";
+			reg = <0xe000a000 0x1000>;
+			interrupts = <0x34 0x0>;
+		};
+
+		eth@e000b000 {
+			compatible = "xlnx,ps7-ethernet-1.00.a";
+			reg = <0xe000b000 0x1000>;
+			interrupts = <0x36 0x0>;
+			phy-handle = <0x2>;
+			#address-cells = <0x1>;
+			#size-cells = <0x0>;
+
+			phy@23 {
+				compatible = "marvell,88e1111";
+				device_type = "ethernet-phy";
+				reg = <0x17>;
+				linux,phandle = <0x2>;
+				phandle = <0x2>;
+			};
+		};
+
+		usb@e0003000 {
+			compatible = "xlnx,ps7-usb-1.00.a";
+			reg = <0xe0003000 0x1000>;
+			interrupts = <0x4c 0x0>;
+			dr_mode = "host";
+			phy_type = "ulpi";
+		};
+
+		tft@E0102000 {
+			compatible = "xlnx,xps-tft-2.01.a";
+			reg = <0xe0102000 0x10000>;
+			xlnx,dcr-splb-slave-if = <0x1>;
+			xlnx,default-tft-base-addr = <0x0>;
+			xlnx,family = "virtex5";
+			xlnx,tft-interface = <0x1>;
+		};
+
+		sdhci@e0100000 {
+			compatible = "generic-sdhci";
+			reg = <0xe0100000 0x1000>;
+			interrupts = <0x38 0x0>;
+		};
+
+		sdhci@e0101000 {
+			compatible = "generic-sdhci";
+			reg = <0xe0101000 0x1000>;
+			interrupts = <0x4f 0x0>;
+		};
+
+		nor@e2000000 {
+			compatible = "cfi-flash";
+			bank-width = <0x1>;
+			reg = <0xe2000000 0x2000000>;
+			#address-cells = <0x1>;
+			#size-cells = <0x1>;
+
+			partition@0 {
+				label = "nor-fsbl";
+				reg = <0x0 0x80000>;
+			};
+
+			partition@1 {
+				label = "nor-u-boot";
+				reg = <0x80000 0x80000>;
+			};
+
+			partition@2 {
+				label = "nor-linux";
+				reg = <0x100000 0x500000>;
+			};
+
+			partition@3 {
+				label = "nor-device-tree";
+				reg = <0x600000 0x20000>;
+			};
+
+			partition@4 {
+				label = "nor-user";
+				reg = <0x620000 0x8e0000>;
+			};
+
+			partition@5 {
+				label = "nor-scratch";
+				reg = <0xf00000 0x100000>;
+			};
+
+			partition@6 {
+				label = "nor-rootfs";
+				reg = <0x1000000 0x1000000>;
+			};
+		};
+
+		devcfg@f8007000 {
+			compatible = "xlnx,ps7-dev-cfg-1.00.a";
+			reg = <0xf8007000 0x1000>;
+			interrupts = <0x28 0x0>;
+		};
+
+		nand@e1000000 {
+			compatible = "xlnx,ps7-nand-1.00.a";
+			reg = <0xe1000000 0x1000000 0xe000e000 0x1000>;
+			#address-cells = <0x1>;
+			#size-cells = <0x1>;
+
+			partition@0 {
+				label = "nand-fsbl";
+				reg = <0x0 0x100000>;
+			};
+
+			partition@1 {
+				label = "nand-u-boot";
+				reg = <0x100000 0x100000>;
+			};
+
+			partition@2 {
+				label = "nand-linux";
+				reg = <0x200000 0x500000>;
+			};
+
+			partition@3 {
+				label = "nand-device-tree";
+				reg = <0x700000 0x20000>;
+			};
+
+			partition@4 {
+				label = "nand-user";
+				reg = <0x720000 0xe0000>;
+			};
+
+			partition@5 {
+				label = "nand-scratch";
+				reg = <0x800000 0x100000>;
+			};
+
+			partition@6 {
+				label = "nand-rootfs";
+				reg = <0x900000 0x8000000>;
+			};
+
+			partition@7 {
+				label = "nand-bitstreams";
+				reg = <0x8900000 0x7700000>;
+			};
+		};
+	};
+};

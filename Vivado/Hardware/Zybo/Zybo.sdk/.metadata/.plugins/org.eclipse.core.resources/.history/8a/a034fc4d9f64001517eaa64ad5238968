@@ -1,0 +1,52 @@
+/*
+ * FIFO.h
+ *
+ *  Created on: 28.12.2014
+ *      Author: Daniel
+ */
+
+#ifndef FIFO_H_
+#define FIFO_H_
+
+/*******************************************************************************/
+/*                             I N C L U D E S                                 */
+/*******************************************************************************/
+
+#include "xparameters.h"
+#include "xllfifo.h"
+
+/*******************************************************************************/
+/*                             D E F I N E S                                   */
+/*******************************************************************************/
+
+#define FIFO_0				XPAR_AXI_FIFO_DATA_DEVICE_ID
+#define FIFO_1				XPAR_AXI_FIFO_FFT_CONFIG_DEVICE_ID
+
+#define PAKET_WIDTH 		4
+
+/*******************************************************************************/
+/*                    F U N C T I O N   D E C L A R A T I O N S                */
+/*******************************************************************************/
+
+int Setup_Fifo				(XLlFifo *Fifo, u32 ID);
+void FIFO_SendToBuffer		(XLlFifo *Fifo, u32 Quelle);
+void FIFO_SendData			(XLlFifo *Fifo, u32 Anzahl);
+int FIFO_ReadData			(XLlFifo *Fifo, u32 *Receive);
+void FIFO_EnableInt			(void);
+void FIFO_DisableInt		(void);
+void FifoHandler			(XLlFifo *Fifo);
+
+/*******************************************************************************/
+/*                        G L O B A L   V A R I A B L E S                      */
+/*******************************************************************************/
+
+
+
+/*******************************************************************************/
+/*                             I N S T A N C E S                               */
+/*******************************************************************************/
+
+XLlFifo 					Fifo_0;
+XLlFifo 					Fifo_1;
+
+#endif /* FIFO_H_ */

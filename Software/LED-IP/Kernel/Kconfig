@@ -1,0 +1,10 @@
+menuconfig LED_OUT
+	tristate "Enable LED"
+
+if LED_OUT
+
+config PROC_EVENTS
+	depends on LED_OUT=y
+	default y
+
+endif # LED_OUT

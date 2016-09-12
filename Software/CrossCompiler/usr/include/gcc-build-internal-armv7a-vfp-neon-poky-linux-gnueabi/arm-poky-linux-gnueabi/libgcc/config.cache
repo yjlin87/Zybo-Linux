@@ -1,0 +1,60 @@
+# This file is a shell script that caches the results of configure
+# tests run on this system so they can be shared between configure
+# scripts and configure runs, see configure's option --config-cache.
+# It is not useful on other systems.  If it contains results you don't
+# want to keep, you may remove or edit it.
+#
+# config.status only pays attention to the cache file if you give it
+# the --recheck option to rerun configure.
+#
+# `ac_cv_env_foo' variables (set or unset) will be overridden when
+# loading this file, other *unset* `ac_cv_foo' will be assigned the
+# following values.
+
+ac_cv_build=${ac_cv_build=x86_64-pc-linux-gnu}
+ac_cv_c_compiler_gnu=${ac_cv_c_compiler_gnu=yes}
+ac_cv_env_CC_set=set
+ac_cv_env_CC_value=' /home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/work/armv7a-vfp-neon-poky-linux-gnueabi/gcc-cross/4.8.2-r0/gcc-4.8.2/build.x86_64-linux.arm-poky-linux-gnueabi/./gcc/xgcc -B/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/work/armv7a-vfp-neon-poky-linux-gnueabi/gcc-cross/4.8.2-r0/gcc-4.8.2/build.x86_64-linux.arm-poky-linux-gnueabi/./gcc/ -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon -isystem/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/zedboard-zynq7/usr/include -B/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/usr/arm-poky-linux-gnueabi/bin/ -B/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/usr/arm-poky-linux-gnueabi/lib/ -isystem /home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/usr/arm-poky-linux-gnueabi/include -isystem /home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/usr/arm-poky-linux-gnueabi/sys-include --sysroot=/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/zedboard-zynq7  '
+ac_cv_env_CFLAGS_set=set
+ac_cv_env_CFLAGS_value='-g -Os'
+ac_cv_env_CPPFLAGS_set=set
+ac_cv_env_CPPFLAGS_value=
+ac_cv_env_CPP_set=set
+ac_cv_env_CPP_value='gcc -E '
+ac_cv_env_LDFLAGS_set=set
+ac_cv_env_LDFLAGS_value='-Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed'
+ac_cv_env_LIBS_set=
+ac_cv_env_LIBS_value=
+ac_cv_env_build_alias_set=set
+ac_cv_env_build_alias_value=x86_64-linux
+ac_cv_env_host_alias_set=set
+ac_cv_env_host_alias_value=arm-poky-linux-gnueabi
+ac_cv_env_target_alias_set=set
+ac_cv_env_target_alias_value=arm-poky-linux-gnueabi
+ac_cv_host=${ac_cv_host=arm-poky-linux-gnueabi}
+ac_cv_objext=${ac_cv_objext=o}
+ac_cv_path_SED=${ac_cv_path_SED=sed}
+ac_cv_path_install=${ac_cv_path_install='/usr/bin/install -c'}
+ac_cv_prog_AR=${ac_cv_prog_AR=arm-poky-linux-gnueabi-ar}
+ac_cv_prog_AWK=${ac_cv_prog_AWK=gawk}
+ac_cv_prog_CC=${ac_cv_prog_CC=' /home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/work/armv7a-vfp-neon-poky-linux-gnueabi/gcc-cross/4.8.2-r0/gcc-4.8.2/build.x86_64-linux.arm-poky-linux-gnueabi/./gcc/xgcc -B/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/work/armv7a-vfp-neon-poky-linux-gnueabi/gcc-cross/4.8.2-r0/gcc-4.8.2/build.x86_64-linux.arm-poky-linux-gnueabi/./gcc/ -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon -isystem/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/zedboard-zynq7/usr/include -B/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/usr/arm-poky-linux-gnueabi/bin/ -B/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/usr/arm-poky-linux-gnueabi/lib/ -isystem /home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/usr/arm-poky-linux-gnueabi/include -isystem /home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/usr/arm-poky-linux-gnueabi/sys-include --sysroot=/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/zedboard-zynq7  '}
+ac_cv_prog_CPP=${ac_cv_prog_CPP='gcc -E '}
+ac_cv_prog_LIPO=${ac_cv_prog_LIPO=arm-poky-linux-gnueabi-lipo}
+ac_cv_prog_NM=${ac_cv_prog_NM=/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/work/armv7a-vfp-neon-poky-linux-gnueabi/gcc-cross/4.8.2-r0/gcc-4.8.2/build.x86_64-linux.arm-poky-linux-gnueabi/./gcc/nm}
+ac_cv_prog_RANLIB=${ac_cv_prog_RANLIB=arm-poky-linux-gnueabi-ranlib}
+ac_cv_prog_STRIP=${ac_cv_prog_STRIP=arm-poky-linux-gnueabi-strip}
+ac_cv_prog_cc_c89=${ac_cv_prog_cc_c89=}
+ac_cv_prog_cc_g=${ac_cv_prog_cc_g=yes}
+ac_cv_sizeof_double=${ac_cv_sizeof_double=8}
+ac_cv_sizeof_long_double=${ac_cv_sizeof_long_double=8}
+acl_cv_prog_gnu_ld=${acl_cv_prog_gnu_ld=yes}
+gcc_cv_collect2_libs=${gcc_cv_collect2_libs='none required'}
+gcc_cv_have_cc_tls=${gcc_cv_have_cc_tls=yes}
+gcc_cv_use_emutls=${gcc_cv_use_emutls=no}
+libgcc_cv_cfi=${libgcc_cv_cfi=yes}
+libgcc_cv_dfp=${libgcc_cv_dfp=no}
+libgcc_cv_fixed_point=${libgcc_cv_fixed_point=yes}
+libgcc_cv_hidden_visibility_attribute=${libgcc_cv_hidden_visibility_attribute=yes}
+libgcc_cv_init_priority=${libgcc_cv_init_priority=yes}
+libgcc_cv_lib_sjlj_exceptions=${libgcc_cv_lib_sjlj_exceptions=no}
+lt_cv_sys_lib_dlsearch_path_spec=${lt_cv_sys_lib_dlsearch_path_spec='/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/usr/lib/armv7a-vfp-neon-poky-linux-gnueabi /home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/lib'}

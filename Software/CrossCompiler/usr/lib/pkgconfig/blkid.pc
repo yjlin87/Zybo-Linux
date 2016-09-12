@@ -1,0 +1,11 @@
+prefix=/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/usr
+exec_prefix=/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/usr
+libdir=/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/usr/lib
+includedir=/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/usr/include
+
+Name: blkid
+Description: Block device id library
+Version: 2.24.0
+Requires.private: uuid
+Cflags: -I${includedir}/blkid
+Libs: -L${libdir} -lblkid

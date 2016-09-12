@@ -1,0 +1,140 @@
+#!/usr/bin/env sh
+AR='ar'
+AR_FOR_TARGET='arm-poky-linux-gnueabi-ar'
+AS='as '
+BUILD_AR='ar'
+BUILD_AS='as '
+BUILD_CC='gcc '
+BUILD_CCLD='gcc '
+BUILD_CFLAGS='-isystem/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/usr/include -O2 -pipe'
+BUILD_CPP='cpp '
+BUILD_CPPFLAGS='-isystem/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/usr/include'
+BUILD_CXX='g++ '
+BUILD_CXXFLAGS='-isystem/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/usr/include -O2 -pipe'
+BUILD_FC='gfortran '
+BUILD_LD='ld '
+BUILD_LDFLAGS='-L/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/usr/lib -L/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/lib -Wl,-rpath-link,/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/usr/lib -Wl,-rpath-link,/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/lib -Wl,-rpath,/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/usr/lib -Wl,-rpath,/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/lib -Wl,-O1'
+BUILD_NM='nm'
+BUILD_RANLIB='ranlib'
+BUILD_STRIP='strip'
+CC='gcc '
+CCACHE_DIR='/home/daniel'
+CCACHE_DISABLE='1'
+CCLD='gcc '
+CC_FOR_BUILD='gcc '
+CC_FOR_TARGET=' arm-poky-linux-gnueabi-gcc  -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon'
+CFLAGS='-isystem/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/usr/include -O2 -pipe'
+CFLAGS_FOR_BUILD='-isystem/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/usr/include -O2 -pipe'
+CFLAGS_FOR_TARGET=' -O2 -pipe -g -feliminate-unused-debug-types'
+CONFIG_SITE='/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/meta/site/endian-little /home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/meta/site/common-linux /home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/meta/site/common-glibc /home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/meta/site/x86_64-linux /home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/meta/site/common '
+CPP='gcc -E '
+CPPFLAGS=''
+CPPFLAGS_FOR_BUILD='-isystem/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/usr/include'
+CPPFLAGS_FOR_TARGET=''
+CPP_FOR_BUILD='cpp '
+CXX='g++ '
+CXXFLAGS='-isystem/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/usr/include -O2 -pipe'
+CXXFLAGS_FOR_BUILD='-isystem/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/usr/include -O2 -pipe'
+CXXFLAGS_FOR_TARGET=' -O2 -pipe -g -feliminate-unused-debug-types'
+CXX_FOR_BUILD='g++ '
+FC='gfortran '
+LD='ld '
+LDFLAGS='-L/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/usr/lib -L/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/lib -Wl,-rpath-link,/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/usr/lib -Wl,-rpath-link,/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/lib -Wl,-rpath,/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/usr/lib -Wl,-rpath,/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/lib -Wl,-O1'
+LDFLAGS_FOR_BUILD='-L/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/usr/lib -L/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/lib -Wl,-rpath-link,/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/usr/lib -Wl,-rpath-link,/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/lib -Wl,-rpath,/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/usr/lib -Wl,-rpath,/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/lib -Wl,-O1'
+LDFLAGS_FOR_TARGET='-Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed'
+LD_FOR_BUILD='ld '
+LD_FOR_TARGET='arm-poky-linux-gnueabi-ld'
+MAKE='make'
+NM='nm'
+NM_FOR_TARGET='arm-poky-linux-gnueabi-nm'
+OBJCOPY='objcopy'
+OBJDUMP='objdump'
+OLDPWD='/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build'
+PATH='/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/scripts:/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/usr/bin/armv7a-vfp-neon-poky-linux-gnueabi:/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/usr/bin/armv7a-vfp-neon-poky-linux-gnueabi/crossscripts:/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/usr/sbin:/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/usr/bin:/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/sbin:/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/bin:/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/scripts:/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games'
+PS1='$ '
+PS2='> '
+PWD='/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/work/armv7a-vfp-neon-poky-linux-gnueabi/gcc-cross/4.8.2-r0/gcc-4.8.2/build.x86_64-linux.arm-poky-linux-gnueabi'
+RANLIB='ranlib'
+RANLIB_FOR_TARGET='arm-poky-linux-gnueabi-ranlib'
+STRINGS='strings'
+STRIP='strip'
+TARGET_CFLAGS=' -O2 -pipe -g -feliminate-unused-debug-types'
+TARGET_CPPFLAGS=''
+TARGET_CXXFLAGS=' -O2 -pipe -g -feliminate-unused-debug-types'
+TARGET_LDFLAGS='-Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed'
+ac_cv_path_SED='sed'
+base_bindir='/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/usr/bin/armv7a-vfp-neon-poky-linux-gnueabi'
+base_libdir='/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/lib'
+base_prefix='/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux'
+base_sbindir='/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/usr/bin/armv7a-vfp-neon-poky-linux-gnueabi'
+bindir='/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/usr/bin/armv7a-vfp-neon-poky-linux-gnueabi'
+datadir='/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/usr/share'
+docdir='/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/usr/share/doc'
+exec_prefix='/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/usr'
+gcc_cv_collect2_libs='none required'
+includedir='/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/usr/include'
+infodir='/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/usr/share/info'
+libdir='/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/usr/lib/armv7a-vfp-neon-poky-linux-gnueabi'
+libexecdir='/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/usr/libexec/armv7a-vfp-neon-poky-linux-gnueabi'
+localstatedir='/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/var'
+lt_cv_sys_lib_dlsearch_path_spec='/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/usr/lib/armv7a-vfp-neon-poky-linux-gnueabi /home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/lib'
+mandir='/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/usr/share/man'
+nonarch_base_libdir='/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/lib'
+oldincludedir='/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/usr/include'
+prefix='/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/usr'
+sbindir='/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/usr/bin/armv7a-vfp-neon-poky-linux-gnueabi'
+servicedir='/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/srv'
+sharedstatedir='/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/com'
+sysconfdir='/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/etc'
+systemd_unitdir='/lib/systemd'
+target="$1"
+usage () {
+	echo "Usage:"
+	echo "$0 user@target 'extra options to dejagnu'"
+	echo "$0 target 'extra options to dejagnu'"
+	echo "$0 target"
+	echo "e.g. $0 192.168.7.2 ' dg.exp=visibility-d.c'"
+	echo "will only run visibility-d.c test case"
+	echo "e.g. $0 192.168.7.2 '/-mthumb dg.exp=visibility-d.c'"
+	echo "will only run visibility-d.c test case in thumb mode"
+	echo "You need to have dejagnu autogen expect installed"
+	echo "on the build host"
+    }
+if [ "x$target" = "x" ]
+then
+	echo "Please specify the target machine and remote user in form of user@target\n"
+	usage
+	exit 1;
+fi
+
+shift
+
+echo "$target" | grep "@" 2>&1 > /dev/null
+if [ "x$?" = "x0" ]
+then
+   user=$(echo $target | cut -d '@' -f 1)
+   target=$(echo $target | cut -d '@' -f 2)
+else
+   user=$USER
+fi
+ssh $user@$target date 2>&1 > /dev/null
+if [ "x$?" != "x0" ]
+then
+	echo "Failed connecting to $user@$target it could be because"
+	echo "you don't have passwordless ssh setup to access $target"
+	echo "or sometimes host key has been changed"
+	echo "in such case do something like below on build host"
+	echo "ssh-keygen -f "~/.ssh/known_hosts" -R $target"
+	echo "and then try ssh $user@$target"
+
+	usage
+	exit 1
+fi
+	echo "lappend boards_dir [pwd]/../../.." > /home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/work/armv7a-vfp-neon-poky-linux-gnueabi/gcc-cross/4.8.2-r0/gcc-4.8.2/build.x86_64-linux.arm-poky-linux-gnueabi/site.exp
+	echo "load_generic_config \"unix\"" > /home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/work/armv7a-vfp-neon-poky-linux-gnueabi/gcc-cross/4.8.2-r0/gcc-4.8.2/build.x86_64-linux.arm-poky-linux-gnueabi/armv7a-vfp-neon.exp
+	echo "set_board_info username $user" >> /home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/work/armv7a-vfp-neon-poky-linux-gnueabi/gcc-cross/4.8.2-r0/gcc-4.8.2/build.x86_64-linux.arm-poky-linux-gnueabi/armv7a-vfp-neon.exp
+	echo "set_board_info rsh_prog ssh" >> /home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/work/armv7a-vfp-neon-poky-linux-gnueabi/gcc-cross/4.8.2-r0/gcc-4.8.2/build.x86_64-linux.arm-poky-linux-gnueabi/armv7a-vfp-neon.exp
+	echo "set_board_info rcp_prog scp" >> /home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/work/armv7a-vfp-neon-poky-linux-gnueabi/gcc-cross/4.8.2-r0/gcc-4.8.2/build.x86_64-linux.arm-poky-linux-gnueabi/armv7a-vfp-neon.exp
+	echo "set_board_info hostname $target" >> /home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/work/armv7a-vfp-neon-poky-linux-gnueabi/gcc-cross/4.8.2-r0/gcc-4.8.2/build.x86_64-linux.arm-poky-linux-gnueabi/armv7a-vfp-neon.exp
+	DEJAGNU=/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/work/armv7a-vfp-neon-poky-linux-gnueabi/gcc-cross/4.8.2-r0/gcc-4.8.2/build.x86_64-linux.arm-poky-linux-gnueabi/site.exp make -k check RUNTESTFLAGS="--target_board=armv7a-vfp-neon$@"
+

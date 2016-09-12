@@ -1,0 +1,53 @@
+#include "FIFO.h"
+
+int Setup_Fifo(XLlFifo *Fifo, u32 ID)
+{
+	return XLlFifo_CfgInitialize(Fifo, XLlFfio_LookupConfig(ID), XLlFfio_LookupConfig(ID)->BaseAddress);
+}
+
+void FIFO_SendToBuffer(XLlFifo *Fifo, u32 Quelle)
+{
+	if(XLlFifo_iTxVacancy(Fifo))
+	{
+		XLlFifo_TxPutWord(Fifo, Quelle);
+	}
+}
+
+void FIFO_SendData(XLlFifo *Fifo, u32 Anzahl)
+{
+	// Uebertragung starten
+	XLlFifo_iTxSetLen(Fifo, Anzahl * PAKET_WIDTH);
+
+	// Warten bis Uebertragung beendet ist
+	while(!(XLlFifo_IsTxDone(Fifo)));
+}
+
+void FIFO_EnableInt()
+{
+
+}
+
+void FIFO_DisableInt()
+{
+
+}
+
+int FIFO_ReadData(XLlFifo *Fifo, u32 *Ziel)
+{
+	int Laenge = 0;
+	int Byte = 0;
+
+	Laenge = XLlFifo_iRxGetLen(Fifo) / PAKET_WIDTH;
+
+	for(Byte = 0; Byte < Laenge; Byte++)
+	{
+		Ziel[Byte] = XLlFifo_RxGetWord(Fifo);
+	}
+
+	return Laenge;
+}
+
+void FifoHandler(XLlFifo *InstancePtr)
+{
+
+}

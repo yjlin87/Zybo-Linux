@@ -1,0 +1,10 @@
+prefix=/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/usr
+exec_prefix=/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/usr
+libdir=/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/usr/lib
+includedir=${libdir}/libffi-3.0.13/include
+
+Name: libffi
+Description: Library supporting Foreign Function Interfaces
+Version: 3.0.13
+Libs: -L${libdir} -lffi
+Cflags: -I${includedir}

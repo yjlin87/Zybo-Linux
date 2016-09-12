@@ -1,0 +1,85 @@
+/*******************************************************************************/
+/*                                H E A D E R                                  */
+/*******************************************************************************/
+// File Name            : main.c
+// Author               : Daniel Kampert
+// Modified by          :
+// Processor            : ARM Cortex-A9
+// Evaluation Board     : Zybo
+// Date                 : 25-12-2014
+
+/*******************************************************************************/
+/*                     U P D A T E   I N F O R M A T I O N                     */
+/*******************************************************************************/
+
+// Date             Changes
+// -----------------------------------------------------------------------------
+//
+
+
+/*******************************************************************************/
+/*                             I N C L U D E S                                 */
+/*******************************************************************************/
+
+#include "xparameters.h"
+#include "FIFO.h"
+#include "math.h"
+
+/*******************************************************************************/
+/*                             D E F I N E S                                   */
+/*******************************************************************************/
+
+/*******************************************************************************/
+/*                    F U N C T I O N   D E C L A R A T I O N S                */
+/*******************************************************************************/
+
+/*******************************************************************************/
+/*                        G L O B A L   V A R I A B L E S                      */
+/*******************************************************************************/
+
+u32 				Status 			= 0;
+u32 				Zaehler 		= 0;
+
+/*******************************************************************************/
+/*                             I N S T A N C E S                               */
+/*******************************************************************************/
+
+
+/*******************************************************************************/
+/*                                   M A I N                                   */
+/*******************************************************************************/
+
+int main (void)
+{
+	int Config = 1;
+
+	Setup_Fifo(&Fifo_0, FIFO_0);
+	Setup_Fifo(&Fifo_1, FIFO_1);
+
+	printf("\n");
+	printf("--Lets go...--\n");
+	printf("\n");
+
+	printf("Generating Sample...\n");
+	for(Zaehler = 0; Zaehler < ANZAHL_PAKETE; Zaehler++)
+	{
+		SendBuffer[Zaehler] = cos(2 * M_PI *Zaehler/ANZAHL_PAKETE);
+		printf("Input %i: %f\n", (Zaehler + 1), SendBuffer[Zaehler]);
+	}
+	printf("Sending Configuration to FFT Core...\n");
+	Status = SendToBuffer(&Fifo_1, Config, 1);
+	printf("Configuration successful!\n");
+
+	printf("Sending Sample...\n");
+	Status = SendToBuffer(&Fifo_0, SendBuffer, ANZAHL_PAKETE);
+	printf("Sending Sample complete!\n");
+
+	printf("Receive Data...\n");
+	Status = ReadFromBuffer(&Fifo_0, RecieveBuffer);
+	printf("Receive Data successful!\n");
+
+	for(Zaehler = 0; Zaehler < ANZAHL_PAKETE; Zaehler++)
+	{
+		printf("Output %i: %f\n", (Zaehler + 1), RecieveBuffer[Zaehler]);
+	}
+}

@@ -1,0 +1,21 @@
+22:11:33 **** Auto Build of configuration Debug for project standalone_bsp_0_xuartps_intr_example_1 ****
+make all 
+Building file: ../src/xuartps_intr_example.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xuartps_intr_example.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xuartps_intr_example.d" -MT"src/xuartps_intr_example.d" -o "src/xuartps_intr_example.o" "../src/xuartps_intr_example.c"
+Finished building: ../src/xuartps_intr_example.c
+ 
+Building target: standalone_bsp_0_xuartps_intr_example_1.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "standalone_bsp_0_xuartps_intr_example_1.elf"  ./src/xuartps_intr_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: standalone_bsp_0_xuartps_intr_example_1.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size standalone_bsp_0_xuartps_intr_example_1.elf  |tee "standalone_bsp_0_xuartps_intr_example_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31936	   1976	  22900	  56812	   ddec	standalone_bsp_0_xuartps_intr_example_1.elf
+Finished building: standalone_bsp_0_xuartps_intr_example_1.elf.size
+ 
+
+22:11:34 Build Finished (took 474ms)
+

@@ -1,0 +1,11 @@
+#!/bin/sh
+
+prefix=/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/usr
+datarootdir=${prefix}/share
+datadir=/home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/usr/share
+codegendir=${datadir}/pygobject/2.0/codegen
+
+PYTHONPATH=$codegendir
+export PYTHONPATH
+
+exec /home/daniel/Dropbox/Hobby/Zybo_Xilinx_Xilibus/Yocto/poky/build/tmp/sysroots/x86_64-linux/usr/bin/python-native/python $codegendir/codegen.py "$@"

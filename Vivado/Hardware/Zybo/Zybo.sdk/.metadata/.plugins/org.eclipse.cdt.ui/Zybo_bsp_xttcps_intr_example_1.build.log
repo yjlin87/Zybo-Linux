@@ -1,0 +1,33 @@
+15:10:35 **** Auto Build of configuration Debug for project Zybo_bsp_xttcps_intr_example_1 ****
+make all 
+'Building file: ../src/xttcps_intr_example.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xttcps_intr_example.o" -I../../Zybo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xttcps_intr_example.d" -MT"src/xttcps_intr_example.d" -o "src/xttcps_intr_example.o" "../src/xttcps_intr_example.c"
+../src/xttcps_intr_example.c: In function 'main':
+../src/xttcps_intr_example.c:63:5: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+     printf("\nTTC PWM Beispiel\n");
+     ^
+../src/xttcps_intr_example.c:63:5: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+../src/xttcps_intr_example.c: In function 'Tick_Handler':
+../src/xttcps_intr_example.c:109:3: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+   printf("Interrupt Timer 1\n\r");
+   ^
+../src/xttcps_intr_example.c:115:3: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+   printf("Interrupt Timer 2\n\r");
+   ^
+'Finished building: ../src/xttcps_intr_example.c'
+' '
+'Building target: Zybo_bsp_xttcps_intr_example_1.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Zybo_bsp/ps7_cortexa9_0/lib -o "Zybo_bsp_xttcps_intr_example_1.elf"  ./src/xttcps_intr_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Zybo_bsp_xttcps_intr_example_1.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size Zybo_bsp_xttcps_intr_example_1.elf  |tee "Zybo_bsp_xttcps_intr_example_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64940	   3192	  22700	  90832	  162d0	Zybo_bsp_xttcps_intr_example_1.elf
+'Finished building: Zybo_bsp_xttcps_intr_example_1.elf.size'
+' '
+
+15:10:35 Build Finished (took 715ms)
+

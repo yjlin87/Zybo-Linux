@@ -1,0 +1,6 @@
+21:56:53 **** Build of project freertos823_xilinx_bsp_0 ****
+make -k all 
+make: *** Keine Regel, um »all« zu erstellen.
+
+21:56:53 Build Finished (took 82ms)
+

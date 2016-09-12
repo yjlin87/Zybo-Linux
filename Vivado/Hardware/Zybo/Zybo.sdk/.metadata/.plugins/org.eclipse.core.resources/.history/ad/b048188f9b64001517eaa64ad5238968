@@ -1,0 +1,13 @@
+/*
+ * XADC.h
+ *
+ *  Created on: 25.09.2015
+ *      Author: Kampi
+ */
+
+#ifndef XADC_H_
+#define XADC_H_
+
+#include "xparameters.h"
+
+#endif /* XADC_H_ */

@@ -1,0 +1,192 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Sun Jun 12 21:51:56 2016
+| Host         : daniel-VM running 64-bit Ubuntu 14.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'System_AXI_VGA_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of System_AXI_VGA_0_0 (www.kampis-elektroecke.de:Kampis-Elektroecke:AXI_VGA:1.0) from (Rev. 25) to (Rev. 26)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Sat Jun 11 17:07:49 2016
+| Host         : daniel-VM running 64-bit Ubuntu 14.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'System_processing_system7_0_axi_periph_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of System_processing_system7_0_axi_periph_0 (xilinx.com:ip:axi_interconnect:2.1) from (Rev. 9) to (Rev. 10)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Sat Jun 11 17:07:49 2016
+| Host         : daniel-VM running 64-bit Ubuntu 14.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'System_clk_wiz_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of System_clk_wiz_0_0 (xilinx.com:ip:clk_wiz:5.3) to (Rev. 1)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Sat Jun 11 17:07:49 2016
+| Host         : daniel-VM running 64-bit Ubuntu 14.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'System_axi_gpio_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of System_axi_gpio_0_0 (xilinx.com:ip:axi_gpio:2.0) from (Rev. 10) to (Rev. 11)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Sat Jun 11 17:07:49 2016
+| Host         : daniel-VM running 64-bit Ubuntu 14.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'System_axi_fifo_mm_s_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of System_axi_fifo_mm_s_0_0 (xilinx.com:ip:axi_fifo_mm_s:4.1) from (Rev. 5) to (Rev. 6)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Sat Jun 11 17:07:49 2016
+| Host         : daniel-VM running 64-bit Ubuntu 14.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'System_AXI_VGA_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of System_AXI_VGA_0_0 (www.kampis-elektroecke.de:Kampis-Elektroecke:AXI_VGA:1.0) from (Rev. 23) to (Rev. 25)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.1 (lin64) Build 1538259 Fri Apr  8 15:45:23 MDT 2016
+| Date         : Sun Jun  5 17:58:53 2016
+| Host         : daniel-VirtualBox running 64-bit Ubuntu 14.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'System_rst_processing_system7_0_100M_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of System_rst_processing_system7_0_100M_0 (xilinx.com:ip:proc_sys_reset:5.0 (Rev. 9)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.1 (lin64) Build 1538259 Fri Apr  8 15:45:23 MDT 2016
+| Date         : Sun Jun  5 17:58:53 2016
+| Host         : daniel-VirtualBox running 64-bit Ubuntu 14.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'System_processing_system7_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of System_processing_system7_0_0 (xilinx.com:ip:processing_system7:5.5 (Rev. 3)) to current project options.
+
+2. Upgrade messages
+-------------------
+
+WARNING: upgrade cannot add parameter PCW_TRACE_INTERNAL_WIDTH with default value 32 : a parameter called PCW_TRACE_INTERNAL_WIDTH already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_USE_AXI_NONSECURE with default value 0 : a parameter called PCW_USE_AXI_NONSECURE already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_EN_PTP_ENET0 with default value 1 : a parameter called PCW_EN_PTP_ENET0 already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_EN_PTP_ENET0 with default value 1 : a parameter called PCW_EN_PTP_ENET0 already exists in processing_system7_v5_5
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.1 (lin64) Build 1538259 Fri Apr  8 15:45:23 MDT 2016
+| Date         : Sun Jun  5 17:58:53 2016
+| Host         : daniel-VirtualBox running 64-bit Ubuntu 14.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'System_axi_gpio_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of System_axi_gpio_0_0 (xilinx.com:ip:axi_gpio:2.0 (Rev. 10)) to current project options.
+

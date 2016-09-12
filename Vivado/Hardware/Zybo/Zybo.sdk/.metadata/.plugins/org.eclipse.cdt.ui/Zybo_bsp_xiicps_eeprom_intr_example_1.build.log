@@ -1,0 +1,6 @@
+18:24:00 **** Incremental Build of configuration Debug for project Zybo_bsp_xiicps_eeprom_intr_example_1 ****
+make all 
+make: Für das Ziel »all« ist nichts zu tun.
+
+18:24:00 Build Finished (took 150ms)
+

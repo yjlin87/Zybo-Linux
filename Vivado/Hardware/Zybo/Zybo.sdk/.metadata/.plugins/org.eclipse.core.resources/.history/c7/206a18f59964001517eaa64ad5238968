@@ -1,0 +1,18 @@
+/*
+ * Interrupt.h
+ *
+ *  Created on: 25.09.2015
+ *      Author: Kampi
+ */
+
+#ifndef INTERRUPT_H_
+#define INTERRUPT_H_
+
+/*******************************************************************************/
+/*                             I N C L U D E S                                 */
+/*******************************************************************************/
+
+#include "xparameters.h"
+
+
+#endif /* INTERRUPT_H_ */

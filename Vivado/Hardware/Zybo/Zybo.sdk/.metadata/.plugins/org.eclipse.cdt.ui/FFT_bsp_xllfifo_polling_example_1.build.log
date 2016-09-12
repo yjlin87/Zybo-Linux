@@ -1,0 +1,21 @@
+23:53:44 **** Auto Build of configuration Debug for project FFT_bsp_xllfifo_polling_example_1 ****
+make all 
+'Building file: ../src/xllfifo_polling_example.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xllfifo_polling_example.o" -I../../FFT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xllfifo_polling_example.d" -MT"src/xllfifo_polling_example.d" -o "src/xllfifo_polling_example.o" "../src/xllfifo_polling_example.c"
+'Finished building: ../src/xllfifo_polling_example.c'
+' '
+'Building target: FFT_bsp_xllfifo_polling_example_1.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FFT_bsp/ps7_cortexa9_0/lib -o "FFT_bsp_xllfifo_polling_example_1.elf"  ./src/xllfifo_polling_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: FFT_bsp_xllfifo_polling_example_1.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size FFT_bsp_xllfifo_polling_example_1.elf  |tee "FFT_bsp_xllfifo_polling_example_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26640	   1192	  30868	  58700	   e54c	FFT_bsp_xllfifo_polling_example_1.elf
+'Finished building: FFT_bsp_xllfifo_polling_example_1.elf.size'
+' '
+
+23:53:44 Build Finished (took 575ms)
+

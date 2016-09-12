@@ -1,0 +1,67 @@
+/*******************************************************************************/
+/*                                H E A D E R                                  */
+/*******************************************************************************/
+// File Name            : main.c
+// Author               : Daniel Kampert
+// Modified by          :
+// Processor            : ARM Cortex-A9
+// Evaluation Board     : Zybo
+// Date                 : 25-12-2014
+
+/*******************************************************************************/
+/*                     U P D A T E   I N F O R M A T I O N                     */
+/*******************************************************************************/
+
+// Date             Changes
+// -----------------------------------------------------------------------------
+//
+
+/*******************************************************************************/
+/*                             I N C L U D E S                                 */
+/*******************************************************************************/
+
+#include "main.h"
+
+/*******************************************************************************/
+/*                                   M A I N                                   */
+/*******************************************************************************/
+
+int main (void)
+{
+	u32 Config = 0;
+
+	printf("\n");
+
+	printf("Initialisiere FIFO...\n");
+	FFT_FIFO_Init(FIFO_0, FIFO_1);
+	printf("FIFO initialisiert!\n");
+
+	printf("Initialisiere DMA...\n");
+	//FFT_DMA_Init(DMA_0);
+	printf("DMA initialisiert!\n");
+
+	printf("Sende FFT Konfiguration...\n");
+	FFT_FIFO_SendConfig(&Fifo_1, &Config);
+	printf("Konfiguration abgeschlossen!\n");
+
+	printf("\n");
+	printf("--Lets go...--\n");
+	printf("Generating Sample...\n");
+
+	for(Zaehler = 0; Zaehler < FFT_LENGTH * 2; Zaehler = Zaehler + 2)
+	{
+		SendBuffer[Zaehler] = sin(2 * M_PI * Zaehler / (2 * FFT_LENGTH));
+		SendBuffer[Zaehler + 1] = 0.0;
+	}
+
+	printf("Starte DMA-Transfer...\n");
+	//DMA_Transfer((u32 *)SendBuffer, (u32 *)ReceiveBuffer, 2 * FFT_LENGTH);
+	printf("Transfer abgeschlossen\n");
+
+	printf("Compute FFT...\n");
+	Status = FFT_FIFO_Run(&Fifo_0, (u32 *)SendBuffer, (u32 *)ReceiveBuffer, FFT_LENGTH);
+	printf("Empfangene Pakete: %i\n", Status);
+	FFT_PrintResult();
+
+	return 0;
+}

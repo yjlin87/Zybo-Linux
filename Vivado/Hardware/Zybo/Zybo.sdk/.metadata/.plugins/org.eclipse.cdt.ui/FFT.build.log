@@ -1,0 +1,6 @@
+21:30:49 **** Incremental Build of configuration Debug for project FFT ****
+make all 
+make: Für das Ziel »all« ist nichts zu tun.
+
+21:30:50 Build Finished (took 122ms)
+

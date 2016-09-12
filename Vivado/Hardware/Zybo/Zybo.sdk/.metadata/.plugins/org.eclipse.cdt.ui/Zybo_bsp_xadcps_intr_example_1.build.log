@@ -1,0 +1,6 @@
+00:01:39 **** Incremental Build of configuration Debug for project Zybo_bsp_xadcps_intr_example_1 ****
+make all 
+make: Für das Ziel »all« ist nichts zu tun.
+
+00:01:39 Build Finished (took 230ms)
+

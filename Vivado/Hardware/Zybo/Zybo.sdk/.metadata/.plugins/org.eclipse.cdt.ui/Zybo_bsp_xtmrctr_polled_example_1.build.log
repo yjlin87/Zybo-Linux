@@ -1,0 +1,6 @@
+00:01:40 **** Incremental Build of configuration Debug for project Zybo_bsp_xtmrctr_polled_example_1 ****
+make all 
+make: Für das Ziel »all« ist nichts zu tun.
+
+00:01:40 Build Finished (took 223ms)
+
